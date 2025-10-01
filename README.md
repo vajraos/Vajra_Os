@@ -1,2 +1,29 @@
-# Vajra_Os
-VajraOS Community is the central hub for collaboration, ideas, and discussions around the VajraOS project. Here, contributors can share feedback, propose features, access resources, and help shape the roadmap of India’s own open-source OS. Together, we build a faster, secure, and independent future.
+# VajraOS Community Website 🌍
+
+Welcome to the **VajraOS Community Website Repository**!  
+This is the home of our official **community website**, built to share updates, resources, and discussions around the VajraOS project.  
+
+---
+
+## 🎯 Purpose
+- Provide a **central hub** for all things VajraOS.  
+- Share **community updates, announcements, and resources**.  
+- Highlight **contributor guidelines and project roadmaps**.  
+- Showcase the vision of VajraOS to the world.  
+
+---
+
+## 🛠️ Tech Stack (Planned/Current)
+- 🌐 HTML, CSS, JavaScript  
+- ⚡ Bootstrap / Tailwind CSS (for styling)  
+- ⚙️ React / Next.js (optional for interactivity)  
+
+> The stack may evolve as the project grows.  
+
+---
+
+## 💻 How to Run Locally
+1. Clone the repo:  
+   ```bash
+   git clone git@github.com:vajraos/community-website.git
+   cd community-website
