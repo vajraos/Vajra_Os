@@ -52,6 +52,38 @@ a {
   background-color: #e1b12c;
 }
 
+/* Hero buttons container */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Discord button */
+.btn-discord {
+  background-color: #5865f2;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(88, 101, 242, 0.5);
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-discord:hover {
+  background-color: #4752c4;
+}
+
+.btn-discord svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
 /* Navigation */
 .main-nav {
   background-color: #192a56;
@@ -143,6 +175,12 @@ main {
 
 .social-icon:hover {
   transform: scale(1.2);
+}
+
+.social-icon svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #5865f2;
 }
 
 /* Buy Me a Coffee Section */
