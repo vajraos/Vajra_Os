@@ -1,0 +1,199 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #273c75, #192a56);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  background-color: #fbc531;
+  color: #192a56;
+  padding: 15px 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(251, 197, 49, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e1b12c;
+}
+
+/* Navigation */
+.main-nav {
+  background-color: #192a56;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #fbc531;
+  color: #192a56;
+}
+
+/* Main content sections */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.section-card h2 {
+  color: #273c75;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.section-card p,
+.section-card ul {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.section-card ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #273c75;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(39, 60, 117, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #192a56;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Buy Me a Coffee Section */
+.coffee {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fbc531;
+  color: #192a56;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(251, 197, 49, 0.5);
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.coffee:hover {
+  background-color: #e1b12c;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(251, 197, 49, 0.7);
+}
+
+.coffee a {
+  color: #192a56;
+  text-decoration: none;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #273c75;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  main {
+    margin: 20px auto;
+  }
+}
