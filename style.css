@@ -76,47 +76,64 @@
   height: 20px;
 }
 
-/*Navigation Links*/
-.nav-links{
+/* Navigation Links */
+.nav-links {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 
-.nav-links a{
+.nav-links a {
   text-decoration: none;
   color: #c9d1d9;
   font-weight: 500;
-  transition: color 0.3s;
+  position: relative;
+  transition: color 0.3s, transform 0.2s;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
+  color: #58a6ff;
+  transform: scale(1.05);
+}
+
+.nav-links a.active {
   color: #58a6ff;
 }
 
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #58a6ff;
+  border-radius: 2px;
+}
+
 /* Right Side Icons */
-.nav-icons{
+.nav-icons {
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-.nav-icons .icon, .nav-icons .mail, .nav-icons .profile{
+.nav-icons a {
   text-decoration: none;
   color: #e0e0e0;
   font-size: 22px;
-  background-color: rgba(239, 230, 230, 0.1); /* subtle light backdrop */
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 8px;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
 
-.nav-icons a:hover{
+.nav-icons a:hover {
   color: #58a6ff;
   background-color: rgba(88, 166, 255, 0.15);
   box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
   transform: scale(1.1);
 }
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -134,4 +151,71 @@
     flex-wrap: wrap;
     margin-top: 10px;
   }
+}
+
+/* MAIN CONTENT */
+main {
+  margin-top: 100px;
+  padding: 20px 40px;
+  background-color: #0d1117;
+  color: #e6edf3;
+  min-height: 100vh;
+}
+
+/* Feed section */
+.main-feed {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header inside main feed */
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feed-header h2 {
+  color: #58a6ff;
+  font-size: 24px;
+}
+
+.create-post-btn {
+  background-color: #238636;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-post-btn:hover {
+  background-color: #2ea043;
+}
+
+/* Posts styling */
+.post {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.2);
+}
+
+.post h3 {
+  color: #79c0ff;
+  margin-bottom: 8px;
+}
+
+.post p {
+  color: #c9d1d9;
 }
