@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,12 +24,13 @@
 
     <!-- Navbar Links -->
     <nav class="nav-links">
-      <a href="#" class="active" onclick="loadSection('home')">Home</a>
-      <a href="#" onclick="loadSection('groups')">Groups</a>
-      <a href="#" onclick="loadSection('members')">Members</a>
-      <a href="#" onclick="loadSection('blogs')">Blogs</a>
-      <a href="#" onclick="loadSection('shop')">Shop</a>
+      <a href="#" data-section="home" class="active" onclick="loadSection('home')">Home</a>
+      <a href="#" data-section="groups" onclick="loadSection('groups')">Groups</a>
+      <a href="#" data-section="members" onclick="loadSection('members')">Members</a>
+      <a href="#" data-section="blogs" onclick="loadSection('blogs')">Blogs</a>
+      <a href="#" data-section="shop" onclick="loadSection('shop')">Shop</a>
     </nav>
+
 
     <!-- Navbar Icons -->
     <div class="nav-icons">
@@ -96,4 +98,5 @@
     lucide.createIcons();
   </script>
 </body>
+
 </html>

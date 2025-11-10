@@ -103,7 +103,6 @@
 .nav-links a.active {
   color: #58a6ff;
 }
-
 .nav-links a.active::after {
   content: "";
   position: absolute;
@@ -114,6 +113,7 @@
   background-color: #58a6ff;
   border-radius: 2px;
 }
+
 
 /* Right Side Icons */
 .nav-icons {
