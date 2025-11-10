@@ -6,7 +6,9 @@
   <title>VajraOS Community</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- 🔹 FIXED NAVBAR -->
   <header class="navbar">
     <div class="logo-container">
       <img src="VajraOs_logo-removebg-preview.png" alt="VajraOS Logo" class="logo" />
@@ -19,25 +21,39 @@
       <button type="submit"><i data-lucide="search"></i></button>
     </form>
 
+    <!-- Navbar Links -->
     <nav class="nav-links">
-  <a href="#" class="active">Home</a>
-  <a href="#">Groups</a>
-  <a href="#">Members</a>
-  <a href="#">Blogs</a>
-  <a href="#">Shop</a>
-</nav>
+      <a href="#" class="active" onclick="loadSection('home')">Home</a>
+      <a href="#" onclick="loadSection('groups')">Groups</a>
+      <a href="#" onclick="loadSection('members')">Members</a>
+      <a href="#" onclick="loadSection('blogs')">Blogs</a>
+      <a href="#" onclick="loadSection('shop')">Shop</a>
+    </nav>
 
-<div class="nav-icons">
-  <a href="#" class="icon" title="Notifications">🔔</a>
-  <a href="#" class="mail" title="Messages">✉️</a>
-  <a href="#" class="profile" title="Profile">👤</a>
-</div>
-
+    <!-- Navbar Icons -->
+    <div class="nav-icons">
+      <a href="#" title="Notifications" class="icon-btn">🔔</a>
+      <a href="#" title="Messages" class="icon-btn">✉️</a>
+      <a href="#" title="Profile" class="icon-btn profile-icon">👤</a>
+    </div>
   </header>
 
-  <!-- MAIN SECTION (Layer 3) -->
-  <main id="main-content">
-    <section class="main-feed">
+  <!-- 🔹 MAIN CONTENT AREA (3-column layout) -->
+  <main id="main-content" class="layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar-left">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#" onclick="loadSection('home')">🏠 Dashboard</a></li>
+        <li><a href="#" onclick="loadSection('groups')">👥 Groups</a></li>
+        <li><a href="#" onclick="loadSection('members')">🧑‍🤝‍🧑 Members</a></li>
+        <li><a href="#" onclick="loadSection('blogs')">📝 Blogs</a></li>
+        <li><a href="#" onclick="loadSection('shop')">🛒 Shop</a></li>
+      </ul>
+    </aside>
+
+    <!-- Middle Feed -->
+    <section class="main-feed" id="feed-section">
       <div class="feed-header">
         <h2>What's New</h2>
         <button class="create-post-btn">+ Create Post</button>
@@ -55,9 +71,17 @@
         </article>
       </div>
     </section>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+      <h3>Community Updates</h3>
+      <p>✨ 5 New Groups Created</p>
+      <p>🔥 Trending Topic: Open Source Future</p>
+      <p>💡 Tip: Keep exploring VajraOS Community!</p>
+    </aside>
   </main>
 
-  <!-- Buy Me a Coffee Section -->
+  <!-- 🔹 FOOTER + BUY ME A COFFEE -->
   <div class="coffee">
     <a href="https://www.buymeacoffee.com/Agnt_26" target="_blank">☕ Buy me a coffee</a>
   </div>
@@ -66,7 +90,6 @@
     <p>© 2025 VajraOS Community | Open Source ❤️</p>
   </footer>
 
-  <!-- Lucide Icons + Script -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="script.js"></script>
   <script>
