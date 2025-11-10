@@ -21,12 +21,20 @@
 .logo-container{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
 }
 
 .logo{
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 110px;
+  border-radius: 45%;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0px transparent;
+}
+
+.logo:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(219, 112, 69, 0.6);
 }
 
 /*--- Search Bar ---*/
@@ -38,7 +46,7 @@
   padding: 4px 10px;
   margin: 0 20px;
   flex-grow: 1;
-  max-width: 400px;
+  max-width: 700px;
 }
 
 .search-bar input{
@@ -94,14 +102,21 @@
 
 .nav-icons .icon, .nav-icons .mail, .nav-icons .profile{
   text-decoration: none;
-  color: #c9d1d9;
+  color: #e0e0e0;
   font-size: 22px;
-  transition: color 0.3s;
+  background-color: rgba(239, 230, 230, 0.1); /* subtle light backdrop */
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .nav-icons a:hover{
-  color: #58a6ff
+  color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.15);
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+  transform: scale(1.1);
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {

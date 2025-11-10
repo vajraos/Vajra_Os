@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VajraOS community </title>
-    <link rel = "stylesheet" href = "style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VajraOS Community</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class = "navbar">
-        <div class = "logo-container" >
-            <img src = "VajraOs_logo-removebg-preview.png" alt = "VajraOS Logo" class = "logo">
-            <h2>VajraOS</h2>
-        </div>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="VajraOs_logo-removebg-preview.png" alt="VajraOS Logo" class="logo" />
+      <h2>VajraOS</h2>
+    </div>
 
-        <!-- 🔍 Search Bar -->
-         <div class = "search-bar">
-            <input type = "text" placeholder="Search posts, members, or topics...">
-            <button type="submit"><i data-lucide="search">🔍</i></button>
-         </div>
+    <!-- Search Bar -->
+    <form class="search-bar" onsubmit="return handleSearch(event)">
+      <input type="text" placeholder="Search posts, members, or topics..." id="searchInput" />
+      <button type="submit"><i data-lucide="search"></i></button>
+    </form>
 
-        <nav class = "nav-links">
-            <a href = "#">Home</a>
-            <a href = "#">Groups</a> 
-            <a href = "#">Members</a>
-            <a href = "#">Blogs</a>
-            <a href = "#">Shop</a>
-        </nav>
-        <div class = "nav-icons">
-            <a href = "#" class = "icon">🔔</a>
-            <a href = "#" class = "mail">✉️</a>
-            <a href = "#" class = "profile">👤</a>
-        </div>
-    </header>
-    <!-- Buy Me a Coffee Section -->
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Groups</a>
+      <a href="#">Members</a>
+      <a href="#">Blogs</a>
+      <a href="#">Shop</a>
+    </nav>
+
+    <div class="nav-icons">
+      <a href="#" class="icon">🔔</a>
+      <a href="#" class="mail">✉️</a>
+      <a href="#" class="profile">👤</a>
+    </div>
+  </header>
+
+  <!-- Buy Me a Coffee Section -->
   <div class="coffee">
     <a href="https://www.buymeacoffee.com/Agnt_26" target="_blank">☕ Buy me a coffee</a>
   </div>
+
   <footer>
     <p>© 2025 VajraOS Community | Open Source ❤️</p>
   </footer>
+
+  <!-- Lucide Icons + Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
